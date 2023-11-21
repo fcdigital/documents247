@@ -99,5 +99,39 @@
                 </div>
             </div>
         </footer>
+
+        <div id="cookie-container-wrapper">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const isCookieAccepted = localStorage.getItem('isCookieAccepted') === 'true';
+
+            if (!isCookieAccepted) {
+                const cookieContainer = document.createElement('div');
+                cookieContainer.className = 'cookie-container';
+
+                cookieContainer.innerHTML = `
+                    <div class="cookie-popup">
+                        <div class="cookie-content">
+                            <p class="cookie-text-1">Мы используем файлы cookies для обработки статистических данных использования сайта. Нажимая на кнопку “Согласен”, вы даёте согласие на обработку ваших cookies файлов</p>
+                            <button class="cookie-accept-button">Cогласен</button>
+                        </div>
+                    </div>
+                    <!-- Контейнер для фона с размытием -->
+                    <div class="cookie-background"></div>
+                `;
+
+                document.body.appendChild(cookieContainer);
+
+                const acceptCookieBtn = document.querySelector('.cookie-accept-button');
+
+                acceptCookieBtn.addEventListener('click', () => {
+                    localStorage.setItem('isCookieAccepted', 'true');
+                    cookieContainer.style.display = 'none';
+                });
+            }
+        });
+    </script>
+</div>
+
     </body>
 </html>
