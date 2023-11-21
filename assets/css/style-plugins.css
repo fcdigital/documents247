@@ -1,0 +1,27 @@
+
+/* Plugin Hustle */
+.hustle-ui .hustle-info {
+    max-width: 510px !important;
+    margin: auto !important;
+}
+
+@media (min-width: 783px) {
+    .hustle-ui:not(.hustle-size--small) .hustle-info.hustle-info--compact .hustle-layout .hustle-content .hustle-content-wrap {
+        padding: 0 !important;
+    }
+
+    .hustle-ui .hustle-social[data-grid-desktop=stacked] ul li {
+        margin: 0;
+        padding: 10px !important;
+    }
+
+    .hustle-ui .hustle-social {
+        padding: 10px !important;
+    }
+}
+
+
+/* Plugin Contact Form 7 */
+.ajax-loader {
+    display: none !important;
+}
