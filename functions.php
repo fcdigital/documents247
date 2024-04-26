@@ -4,6 +4,8 @@
         // Доп. стили для плагинов
         wp_enqueue_style('style-plugins', get_stylesheet_directory_uri() . '/assets/css/style-plugins.css', ['styles'], '1.0.0');
 
+        // Доп. стили для дочерней темы
+        wp_enqueue_style('styles-child', get_stylesheet_directory_uri() . '/assets/css/style-child.css', [], '1.0.0' );
     });
 
     // Счётчики метрики и аналитики
