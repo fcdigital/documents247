@@ -98,7 +98,7 @@
             </div>
             <a class="footer__creator text text_color_white" href="https://fcdigital.ru/" target="_blank">
                 <span class="footer__creator-capture">Дизайн и создание сайта Fincom Digital</span>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/footer/fincom-logo.svg" class="footer__creator-logo" width="40" height="40" alt="Логотип Fincom Digital">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/footer/fincom-logo.svg" class="footer__creator-logo" width="40" height="40" alt="Логотип Fincom Digital">
             </a>
         </div>
     </div>
